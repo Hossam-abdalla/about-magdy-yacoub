@@ -4,8 +4,53 @@
         <meta charset="UTF-8"/>
         <title>Home</title>
         <link rel="icon" href="assets/heart-svgrepo-com.svg">
+        <link rel="stylesheet" href="css files/share.css">
+        <script src="js files/share.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
+        <div class="social-share-component">
+            <div class="share-container">
+                <div class="share-btn">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <div class="social-media-container">
+                    <div class="social-btn copy-link" onclick="socialShareCopyLink()">
+                        <i class="fas fa-link"></i>
+                        <span class="tooltip">Copy Link</span>
+                    </div>
+                    <div class="social-btn facebook" onclick="socialShareToSocial('facebook')">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="tooltip">Facebook</span>
+                    </div>
+                    <div class="social-btn twitter" onclick="socialShareToSocial('twitter')">
+                        <i class="fab fa-twitter"></i>
+                        <span class="tooltip">Twitter</span>
+                    </div>
+                    <div class="social-btn instagram" onclick="socialShareToSocial('instagram')">
+                        <i class="fab fa-instagram"></i>
+                        <span class="tooltip">Instagram</span>
+                    </div>
+                    <div class="social-btn whatsapp" onclick="socialShareToSocial('whatsapp')">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="tooltip">WhatsApp</span>
+                    </div>
+                    <div class="social-btn linkedin" onclick="socialShareToSocial('linkedin')">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="tooltip">LinkedIn</span>
+                    </div>
+                    <div class="social-btn pinterest" onclick="socialShareToSocial('pinterest')">
+                        <i class="fab fa-pinterest-p"></i>
+                        <span class="tooltip">Pinterest</span>
+                    </div>
+                    <div class="social-btn telegram" onclick="socialShareToSocial('telegram')">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span class="tooltip">Telegram</span>
+                    </div>
+                </div>
+            </div>
+            <div id="social-copied-alert" class="copied-alert">Link copied to clipboard!</div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
